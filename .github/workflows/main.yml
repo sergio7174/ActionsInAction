@@ -11,6 +11,9 @@
          runs-on: ubuntu-latest
          steps:
            - run: echo "👋 Hello World!"
-           - name: Cache
-  uses: actions/cache@v5.0.4
-   
+           - name: Checkout
+             uses: actions/checkout@v6.0.2
+           - name: List files in the repository_dispatch
+             run: |
+              echo "The repository({ github.repository }) contains the following files: "
+              tree

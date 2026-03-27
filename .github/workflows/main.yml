@@ -6,7 +6,7 @@
              - main
      workflow_dispatch:
 
-     Jobs:
+    jobs:
        MyFirstJob:
          runs-on: ubuntu-latest
          steps:

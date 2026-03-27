@@ -15,5 +15,6 @@
              uses: actions/checkout@v6.0.2
            - name: List files in the repository_dispatch
              run: |
-              echo "The repository({ github.repository }) contains the following files: "
-              tree
+                echo "The repository({ github.repository }) contains the following 
+                files:"
+            tree

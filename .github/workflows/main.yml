@@ -20,3 +20,7 @@
                 echo "The repository({ github.repository }) contains the following 
                 files:"
                 tree
+        Test:
+          runs-on: ubuntu-latest
+          environment: Test
+          needs: MyFirstJob

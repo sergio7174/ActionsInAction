@@ -11,6 +11,8 @@
          runs-on: ubuntu-latest
          steps:
            - run: echo "👋 Hello World!"
+           - run: echo "Hello ${{ vars.WHO_TO_GREET }} from ${{ github.actor }}."
+           - run: echo "My secret is ${{ secrets.MY_SECRET_NAME }}."
            - name: Checkout
              uses: actions/checkout@v6.0.2
            - name: List files in the repository_dispatch
